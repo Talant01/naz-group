@@ -1,7 +1,7 @@
 /* Variables */
 
 $font-family: 'Geometria';
-$primary-color: #ff7900;
+$primary-color: #0000FF;
 $font-size: 1.5rem;
 
 /*
@@ -31,6 +31,10 @@ body {
     align-items: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -48,6 +52,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s ease;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .btn-light {
@@ -149,9 +155,10 @@ nav {
 
 .main-offer {
     background: url('../images/main-bg.png') no-repeat center center /cover;
+
     &__bg {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-        padding: 50px 0;
+        padding: 50px 0 70px;
     }
 
     &__title {
@@ -165,20 +172,189 @@ nav {
     &__block {
         max-width: 500px;
     }
+
     &__item {
         max-width: 150px;
+
         img {
             width: 50px;
             height: 50px;
             margin-bottom: 10px;
         }
+
         p {
             color: #fff;
             font-size: 1.5rem;
             font-weight: 500;
+            line-height: 1.4em;
         }
     }
+
     &__wrapper {
         margin-top: 60px;
     }
+}
+
+/* OFFER SECTION */
+
+.offer {
+    padding: 70px 0;
+
+    &__title {
+        font-size: 4rem;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+
+    &__card {
+        border-radius: 10px;
+        opacity: 0.95;
+        border-color: transparent;
+        border-style: solid;
+        transition: all 0.5s ease;
+        padding: 20px;
+        width: 360px;
+
+        &:hover {
+            box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 20%);
+        }
+
+        .card-offer__title {
+            font-size: 3rem;
+            color: #000;
+            line-height: 1.55em;
+            font-weight: bold;
+
+            p {
+                color: $primary-color;
+            }
+        }
+
+        .card-offer__item {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        margin: 20px auto;
+        display: inline-block;
+    }
+}
+
+/* SERVICE SECTION */
+
+.service {
+    padding: 20px 0 50px;
+
+    &__title {
+        font-size: 4rem;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        color: #000;
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__block {
+
+        .card-service {
+            max-width: 360px;
+            margin-bottom: 8rem;
+
+            &__img {
+                max-width: 100%;
+                margin-bottom: 3rem;
+            }
+
+            &__title {
+                font-size: 2.8rem;
+                color: #000;
+                margin-bottom: 1.7rem;
+                font-weight: bold;
+            }
+
+            &__text {
+                font-size: 1.6rem;
+                color: #000;
+                margin-bottom: 2.5rem;
+            }
+
+            &__btn {
+                font-size: 1.5rem !important;
+            }
+
+        }
+    }
+}
+
+/* MEASURE SECTION */
+.measure {
+    background: url('../images/main-bg-2.png') no-repeat center center /cover;
+    &__bg {
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+        padding: 60px 0;
+    }
+    &__title {
+        font-size: 4rem;
+        color: #000;
+        margin-bottom: 40px;
+        font-weight: bold;
+        max-width: 410px;
+        line-height: 1.7em;
+    }
+
+    &__block {
+        max-width: 500px;
+        margin-top: 50px;
+    }
+
+    &__item {
+        max-width: 150px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.4em;
+        }
+    }
+}
+
+/* FOOTER SECTION */
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #efefef;
+    text-align: center;
+
+    &__tel {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+
+    &__contact:not(:last-child) {
+        margin-top: 40px;
+    }
+
 }
