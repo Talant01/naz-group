@@ -42,7 +42,6 @@ table {
 body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-align: center;
 	line-height: 1.15;
 }
 
@@ -54,6 +53,8 @@ h1 {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 b,
@@ -132,58 +133,6 @@ hr {
   --main-bg-color: #fff; /* For using: var(--main-bg-color); */
 }
 
-/*
- *******************
- * PAGE MAIN STYLE *
- *******************
-*/
-
-section {
-  background: #fff;
-}
-
-main h1 {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* HEADER */
-
-header {
-  display: inline-block;
-  width: 100%;
-  background: #000;
-}
-
-header nav {
-  float: right;
-}
-
-header nav li {
-  float: left;
-  margin-left: 10px;
-}
-
-/* EXAMPLE SECTION */
-
-section.example {
-  width: 100%;
-}
-
-.example .cards {
-  display: inline-block;
-  margin-bottom: -4px;
-}
-
-.example article {
-  float: left;
-}
-
-/* FOOTER */
-
-footer {
-  display: block;
-  width: 100%;
-}
 
 /*
  *******************

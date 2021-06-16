@@ -1,3 +1,8 @@
+
+const btnClick = () => {
+	console.log('Button clicked')
+}
+
 module.exports = {
-	hello: 'world'
+	btnClick
 };
