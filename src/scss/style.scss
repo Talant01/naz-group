@@ -2,6 +2,7 @@
 
 $font-family: 'Geometria';
 $primary-color: #0000FF;
+$hover-color: #0404c7;
 $font-size: 1.5rem;
 
 /*
@@ -62,7 +63,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #db6300 !important;
+    background-color: $hover-color !important;
 }
 
 .btn-light:hover {
